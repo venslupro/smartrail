@@ -9,7 +9,7 @@
  *   单一来源：sitemap.ts / robots.ts / metadata metadataBase 三处统一引用。
  */
 
-const DEFAULT_SITE_URL = 'https://smartrail.vercel.app';
+const DEFAULT_SITE_URL = 'https://smartail.vercel.app';
 
 function pickSiteUrl(): string {
   const raw =
