@@ -191,23 +191,25 @@ export function CaseSection(): JSX.Element {
             ))}
           </div>
 
-          <div className="mt-10 grid gap-5 md:grid-cols-3">
+          <div className="mt-10">
             <h4 className="text-base font-semibold text-neutral-800">
               {br.localTitle}
             </h4>
-            {localItems.map((l) => (
-              <div
-                key={l}
-                className="flex items-start gap-3 rounded-2xl border border-white/80 bg-white/70 p-4 backdrop-blur"
-              >
-                <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent-100 text-accent-700">
-                  <IconSvg name="sparkles" className="h-4 w-4" />
-                </span>
-                <span className="text-sm leading-relaxed text-neutral-700">
-                  {l}
-                </span>
-              </div>
-            ))}
+            <div className="mt-4 grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+              {localItems.map((l) => (
+                <div
+                  key={l}
+                  className="flex items-start gap-3 rounded-2xl border border-white/80 bg-white/70 p-4 backdrop-blur"
+                >
+                  <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-accent-100 text-accent-700">
+                    <IconSvg name="sparkles" className="h-4 w-4" />
+                  </span>
+                  <span className="text-sm leading-relaxed text-neutral-700">
+                    {l}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
