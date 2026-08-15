@@ -29,10 +29,19 @@ jobs:
       - name: Upgrade npm to v11 (match lockfile semantics with dev workstation)
         run: npm install -g npm@11
         # 说明：npm@latest 已切到 npm 12，但 npm 12 requires Node ^22.22 || ^24.15 || >=26
-        #       CI 用 Node 20 LTS（Vercel 对应生产 Runtime），所以钉死 npm 11（与本地 Node v25 自带的 npm 同主版本）。
+        #       CI 用 Node 20 LTS（Vercel 对应生产 Runtime），所以钉死 npm 11。
 
-      - name: Install dependencies (npm ci)
-        run: npm ci
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund --prefer-offline
+        # 为什么不用 npm ci？
+        #   @emnapi/core / @emnapi/runtime 等原生依赖的子依赖以 semver range ^1.x 声明，
+        #   在不同 Node 大版本（本地 v25 vs CI v20）、不同平台（macOS arm64 vs Linux x64）
+        #   下 npm 的依赖选择器会在 lockfile 给定 range 内选不同满足版本 — 此时
+        #   npm ci 的「严格按 lockfile 逐条比对」会抛 EUSAGE Missing，因为 lockfile
+        #   只记录了本地环境选中的 1.10.0，CI 侧需要 1.11.3 条目未在锁中。
+        #
+        #   用 npm install + --prefer-offline：优先按 lockfile pinned 版本走缓存，
+        #   跨环境缺失时按 package.json 补全，既稳定不崩，又保证顶层版本不漂移。
 
       - name: Restore Next.js build cache
         uses: actions/cache@v4
