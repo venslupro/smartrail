@@ -4,6 +4,7 @@ import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { LOCALES, type Locale } from '@/src/i18n/request';
+import { SITE_URL } from '@/src/lib/site-config';
 import { Navbar } from '@/src/components/Navbar';
 import { Footer } from '@/src/components/Footer';
 import '../globals.css';
@@ -50,7 +51,7 @@ export function generateMetadata({
   const ogDescription = ogDescByLocale[locale] ?? ogDescByLocale.en;
 
   return {
-    metadataBase: new URL('https://smartrail.vercel.app'),
+    metadataBase: new URL(SITE_URL),
     title,
     description,
     keywords: [

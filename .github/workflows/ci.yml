@@ -46,6 +46,3 @@ jobs:
 
       - name: Production build
         run: npm run build
-        env:
-          # Vercel 上通过 Project Settings 配置真实值；这里只保证构建能完成
-          NEXT_PUBLIC_SITE_URL: http://localhost:3000
