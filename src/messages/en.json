@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "title": "Jiangsu Huacheng Technology | Smart Railway Infrastructure Monitoring",
+    "description": "Jiangsu Huacheng Technology Co., Ltd. specializes in smart railway infrastructure monitoring, providing intelligent sensing-based railway condition monitoring and predictive maintenance systems under the Belt and Road Initiative."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "solutions": "Solutions",
+    "technology": "Technology",
+    "cases": "Projects",
+    "contact": "Contact",
+    "langZh": "中文",
+    "langEn": "EN",
+    "langRu": "RU"
+  },
+  "hero": {
+    "badge": "China-Kazakhstan Demo Project · Belt and Road Initiative",
+    "titlePrimary": "Smart Railway",
+    "titleHighlight": "Infrastructure",
+    "titleSuffix": "Monitoring Solutions",
+    "subtitle": "Intelligent sensing-based railway condition monitoring and predictive maintenance system, building a safe, efficient and sustainable future railway ecosystem.",
+    "ctaPrimary": "Explore Solutions",
+    "ctaSecondary": "Contact Us",
+    "stats": [
+      { "value": "99.5%+", "label": "System Availability" },
+      { "value": "85%+", "label": "Anomaly Accuracy" },
+      { "value": "60-80%", "label": "Cost Reduction" },
+      { "value": "7×24", "label": "Non-Stop Monitoring" }
+    ]
+  },
+  "about": {
+    "eyebrow": "About Huacheng Tech",
+    "title": "A Leading Global Provider of Smart Railway Solutions",
+    "description": "Jiangsu Huacheng Technology Co., Ltd. is dedicated to smart railway infrastructure monitoring. Through technological innovation and industrial cooperation, we deeply integrate intelligent sensing, edge computing, cloud computing and artificial intelligence to provide end-to-end digital transformation solutions for the global railway industry.",
+    "features": [
+      {
+        "title": "Core Independent IP",
+        "desc": "Full-stack independent intellectual property from sensing terminal to cloud platform"
+      },
+      {
+        "title": "Edge-Cloud Architecture",
+        "desc": "Three-layer collaborative architecture balancing real-time response and global intelligence"
+      },
+      {
+        "title": "Global Delivery",
+        "desc": "Belt and Road expertise with cross-border project delivery capabilities"
+      },
+      {
+        "title": "Safety Critical",
+        "desc": "Railway safety standards compliant with ≥99.5% system availability"
+      }
+    ]
+  },
+  "coreValue": {
+    "eyebrow": "Core Values",
+    "title": "Safety · Economy · Efficiency — Triple Value",
+    "subtitle": "From passive response to proactive prevention, a data-driven intelligent O&M system",
+    "values": [
+      {
+        "tag": "Safety Value",
+        "title": "From Reactive to Proactive Prevention",
+        "points": [
+          "Real-time detection of mm-level track geometry changes",
+          "AI early warning before hazards escalate to failures",
+          "Geohazard monitoring for settlement and landslide micro-displacement"
+        ],
+        "icon": "shield"
+      },
+      {
+        "tag": "Economic Value",
+        "title": "Optimal Life-Cycle Cost",
+        "points": [
+          "60-80% O&M cost reduction, less manual inspection",
+          "Unplanned downtime reduced by over 50%",
+          "Key component lifespan extended by 15-20%"
+        ],
+        "icon": "trending"
+      },
+      {
+        "tag": "Efficiency Value",
+        "title": "24/7 Non-Stop Monitoring",
+        "points": [
+          "Round-the-clock monitoring with full-coverage blind-spot free",
+          "End-to-end anomaly alert latency ≤ 10 minutes",
+          "Digital twin 3D visualization with intelligent decision support"
+        ],
+        "icon": "clock"
+      }
+    ]
+  },
+  "architecture": {
+    "eyebrow": "Technical Architecture",
+    "title": "Device-Edge-Cloud Collaborative Architecture",
+    "subtitle": "Three-layer collaborative design integrating sensing, computing and intelligence",
+    "layers": [
+      {
+        "name": "Device Sensing Layer",
+        "subname": "Smart Sleeper Sensing Terminal",
+        "description": "Intelligent sensing devices deployed on railway sleepers at ~30m intervals, enabling high-density, real-time and continuous track condition perception.",
+        "specs": [
+          "STM32L4/L5 Ultra-low Power MCU",
+          "ADXL355 3-Axis Accelerometer ±50g/1kHz",
+          "LoRa SX1262 Mesh Self-Organizing Network",
+          "Zephyr RTOS Low-Power Design",
+          "IP68 Rated, -40°C ~ +85°C Operating Range",
+          "MTBF > 50,000 hrs, Lifespan > 5 Years"
+        ],
+        "features": ["Vibration Monitor", "Temperature Sense", "Humidity Capture", "Wireless Tx/Rx"]
+      },
+      {
+        "name": "Edge Computing Layer",
+        "subname": "ECG Edge Gateway + RES Regional Server",
+        "description": "Deployed along the railway, aggregating and processing data within 1-2 km range, transforming raw signals into high-value feature insights.",
+        "specs": [
+          "ECG: i.MX 8M Plus, NPU 2.3 TOPS",
+          "RES: Industrial Server, Redundant PSUs",
+          "K3s Orchestration, Docker Microservices",
+          "TFLite Edge Inference, Real-Time Detection",
+          "Aggregation Reduces Cloud Data Volume",
+          "Local Decision with ms-Level Response"
+        ],
+        "features": ["Real-Time Process", "Feature Extraction", "Anomaly Detection", "Local Decision"]
+      },
+      {
+        "name": "Cloud Computing Platform",
+        "subname": "Cloud Data & AI Middle Platform",
+        "description": "Acts as the brain: massive data aggregation, storage, deep analysis, model training and global situational awareness with elastic scaling.",
+        "specs": [
+          "Kafka High-Throughput Data Ingest",
+          "Flink Real-Time Stream Processing",
+          "TDengine Optimized Time-Series Storage",
+          "S3 Data Lake, Massive Data Repository",
+          "Kubeflow MLOps Model Training",
+          "Digital Twin 3D Visualization"
+        ],
+        "features": ["Data Lake", "AI Platform", "Digital Twin", "Open APIs"]
+      }
+    ],
+    "metrics": {
+      "availability": "Availability ≥99.5%",
+      "integrity": "Data Integrity ≥98%",
+      "accuracy": "Alert Accuracy ≥85%",
+      "latency": "E2E Latency ≤10 min",
+      "mtbf": "Device MTBF >50,000h",
+      "cost": "Device BOM <$80"
+    }
+  },
+  "case": {
+    "eyebrow": "Project Case",
+    "title": "Kazakhstan Smart Railway Pilot Project",
+    "subtitle": "China-Kazakhstan demonstration project serving the Belt and Road and China-Europe Railway Express",
+    "pilotInfo": {
+      "length": { "label": "Line Length", "value": "~15 km" },
+      "type": { "label": "Line Type", "value": "Mixed Passenger/Freight" },
+      "devices": { "label": "Devices Deployed", "value": "~500 units" },
+      "density": { "label": "Spacing", "value": "15-30m/unit" }
+    },
+    "features": [
+      "Straight section: baseline track condition monitoring",
+      "Curve section (R=800m): high-density monitoring",
+      "Station throat turnout cluster: critical component monitoring",
+      "~200m bridge: special structural condition monitoring"
+    ],
+    "targets": [
+      {
+        "title": "Real-Time Parameter Monitoring",
+        "desc": "Real-time collection and transmission of track vibration, temperature and key parameters"
+      },
+      {
+        "title": "Automatic Anomaly Recognition",
+        "desc": "Automatic detection and alerting for 3 typical track anomalies with ≥85% accuracy"
+      },
+      {
+        "title": "System Reliability Validation",
+        "desc": "Overall availability ≥99.5%, end-to-end latency ≤10 minutes"
+      }
+    ],
+    "roadmapTitle": "Implementation Roadmap",
+    "roadmap": [
+      { "phase": "Design & Dev", "time": "M1-M10", "items": ["Requirements & Architecture", "HW Dev & Testing", "Cloud/Edge SW", "Terminal FW"] },
+      { "phase": "Pilot Execution", "time": "M8-M18", "items": ["Site Survey & Prep", "HW Production", "Integration Testing", "M12 Installation Done", "System SIT"] },
+      { "phase": "Test & Accept", "time": "M15-M20", "items": ["Pilot Ops & Monitor", "M16 UAT Starts", "M20 Acceptance"] }
+    ],
+    "beltRoad": {
+      "title": "Win-Win Cooperation: Belt and Road Initiative",
+      "strategyTitle": "Strategic Significance",
+      "strategies": [
+        {
+          "title": "Enable Digital Kazakhstan",
+          "desc": "Support national goals and drive railway infrastructure digital transformation"
+        },
+        {
+          "title": "Boost China-Europe Express",
+          "desc": "Enhance efficiency and safety of the B&R logistics corridor"
+        },
+        {
+          "title": "Deepen CN-KZ Cooperation",
+          "desc": "Promote railway technology standards mutual recognition and collaboration"
+        }
+      ],
+      "localTitle": "Local Development",
+      "localItems": ["Talent: Train local technical professionals", "Industry: Drive local hi-tech growth", "JV: Win-win with local partners"],
+      "effect": "Pilot line O&M efficiency improvement"
+    }
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Together for a Smart Railway Future",
+    "subtitle": "We look forward to in-depth exchanges and co-creating the new era of smart railways",
+    "company": {
+      "name": "Jiangsu Huacheng Technology Co., Ltd.",
+      "nameEn": "Jiangsu Huacheng Technology Co., Ltd.",
+      "email": "venslu.pro@gmail.com",
+      "emailLabel": "Business Contact Email"
+    },
+    "vision": "To become a world-leading provider of intelligent railway infrastructure solutions, building a data-driven, safe, efficient and sustainable future railway ecosystem.",
+    "form": {
+      "name": "Your Name",
+      "namePlaceholder": "Please enter your name",
+      "company": "Company",
+      "companyPlaceholder": "Please enter company name",
+      "email": "Email Address",
+      "emailPlaceholder": "Please enter email address",
+      "message": "Cooperation Interest",
+      "messagePlaceholder": "Please describe your cooperation needs or inquiries...",
+      "submit": "Submit Inquiry",
+      "submitting": "Submitting...",
+      "success": "Submitted! We will contact you soon."
+    }
+  },
+  "footer": {
+    "desc": "Dedicated to smart railway infrastructure monitoring, delivering end-to-end digital transformation solutions for global railways.",
+    "sections": [
+      {
+        "title": "Quick Links",
+        "links": ["Home", "About Us", "Solutions", "Projects"]
+      },
+      {
+        "title": "Capabilities",
+        "links": ["Smart Sensing Terminal", "Edge Computing Gateway", "Cloud Platform", "AI Models"]
+      },
+      {
+        "title": "Contact",
+        "links": ["Business Inquiry", "Tech Partnership", "Careers"]
+      }
+    ],
+    "copyright": "© 2026 Jiangsu Huacheng Technology Co., Ltd. All rights reserved.",
+    "copyrightEn": "© 2026 Jiangsu Huacheng Technology Co., Ltd. All rights reserved."
+  }
+}
